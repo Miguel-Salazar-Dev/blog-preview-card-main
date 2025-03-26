@@ -26,20 +26,24 @@ Users should be able to:
 ### Screenshot
 
 - Desktop Version:
+
 ![Screenshot Desktop Version](screenshot_1.png)
 
 - Desktop Version - Hover:
+
 ![Screenshot Desktop Version - Hover](screenshot_2.png)
 
 - Mobile Version:
+
 ![Screenshot Mobile Version](screenshot_3.png)
 
 - Mobile Version - Focus:
+
 ![Screenshot Mobile Version - Focus](screenshot_4.png)
 
 ### Links
 
-- Solution URL: [If you want to share some feedback, please go to my solution!](https://your-solution-url.com)
+- Solution URL: [If you want to share some feedback, please go to my solution!](https://www.frontendmentor.io/solutions/blog-preview-card-with-css-McZBLdetTv)
 - Live Site URL: [You can view my solution live!](https://miguel-salazar-dev.github.io/blog-preview-card-main/)
 
 ## My process
