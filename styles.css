@@ -35,11 +35,11 @@ a {
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  font-size: 100%;
   font-family: 'Figtree', sans-serif;
   font-optical-sizing: auto;
   font-weight: var(--font-preset-weight);
   font-style: normal;
-  font-size: var(--font-preset-2-size);
   line-height: 150%;
   letter-spacing: 0;
   background-color: var(--yellow);
@@ -52,7 +52,7 @@ a {
   box-sizing: border-box;
   width: 384px;
   justify-content: left;
-  align-items: start;
+  align-items: flex-start;
   gap: var(--spacing-300);
   padding: var(--spacing-300);
   border-radius: 20px;
@@ -64,7 +64,7 @@ a {
   transition: filter 0.2s;
 }
 
-.card:hover {
+.card:hover, :focus {
   filter: drop-shadow(16px 16px #000);
   .card-title {
     color: var(--yellow);
@@ -75,6 +75,14 @@ a {
   width: 100%;
   height: 200px;
   border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .card-content {
@@ -92,17 +100,17 @@ a {
   padding: var(--spacing-50) var(--spacing-150);
   border-radius: 4px;
   background-color: var(--yellow);
-  font-size: var(--font-preset-3-size);
+  font-size: clamp(12px, 2vw, var(--font-preset-3-size));
   font-weight: var(--font-preset-weight-bold);
 }
 
 .card-date {
-  font-size: var(--font-preset-3-size);
+  font-size: clamp(12px, 2vw, var(--font-preset-3-size));
 }
 
 .card-title {
   height: auto;
-  font-size: var(--font-preset-1-size);
+  font-size: clamp(20px, 2vw, var(--font-preset-1-size));
   font-weight: var(--font-preset-weight-bold);
   transition: color 0.2s;
 }
@@ -110,6 +118,7 @@ a {
 .card-description {
   height: auto;
   color: var(--gray-500);
+  font-size: clamp(14px, 2vw, var(--font-preset-2-size));
 }
 
 .card-author {
@@ -152,4 +161,10 @@ a {
   font-weight: var(--font-preset-weight);
   font-style: normal;
   font-size: var(--font-preset-2-size);
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 327px;
+  }
 }
